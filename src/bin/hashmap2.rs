@@ -9,5 +9,9 @@ fn main() {
     for person in users.keys() {
         // .keys() returns keys only
         println!("person = {}", person); // prints Jack, Jill, Adam
+        match users.get(person) {
+            Some(x) => println!("{}", x),
+            None => println!("")
+        }
     }
 }
