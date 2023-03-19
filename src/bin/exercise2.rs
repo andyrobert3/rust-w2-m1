@@ -6,7 +6,7 @@ fn main() {
 
   // todo: Using filter() to filter for numbers > 5, and use map() to multiply their values by 2.
   // todo: Save the values into a new vector called vec_even\
-  let vec_even = iter.filter(|x| **x > 5).map(|x| x * 2);
+  let vec_even: Vec<_> = iter.filter(|x| **x > 5).map(|x| x * 2).collect();
 
   // todo: print vec_even
   println!("vec_even: {:?}", vec_even);
